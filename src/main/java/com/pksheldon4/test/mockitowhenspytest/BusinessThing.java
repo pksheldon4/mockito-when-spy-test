@@ -6,6 +6,6 @@ public class BusinessThing {
 
 
     public List<String> doSomething(String value) {
-        throw new RuntimeException("This should never be called during this test");
+        throw new UnsupportedOperationException("This should never be called during this test");
     }
 }

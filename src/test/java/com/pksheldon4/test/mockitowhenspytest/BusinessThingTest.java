@@ -44,7 +44,7 @@ public class BusinessThingTest {
         assertThat(results.get(0), is("Test Results"));
     }
 
-    @Test
+    @Test(expected = UnsupportedOperationException.class)
     public void doSomething_throwsAnException_whenSpy_whenThenReturn() {
 
         BusinessThing businessThing = spy(BusinessThing.class);
